@@ -1,6 +1,12 @@
 def greet(name):
     message = 'Hello, ' + name + '-san!'
-    print(message)
-
-
-greet('Inoue')
+    from datetime import datetime
+    hour = datetime.now().hour
+    if hour <= 11:
+        message = 'Good morning'
+    elif hour <= 17:
+        message = 'Hello'
+    else:
+        message = 'Good evening'
+   
+print(greet('Inoue'))
