@@ -8,5 +8,6 @@ def greet(name):
         message = 'Hello'
     else:
         message = 'Good evening'
-   
-print(greet('Inoue'))
+    print(message)
+
+greet('Inoue')
